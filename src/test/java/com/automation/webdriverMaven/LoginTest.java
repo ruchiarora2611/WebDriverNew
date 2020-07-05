@@ -25,10 +25,11 @@ public class LoginTest {
 		}
 	}
   @Test	
-public void login()
+public void login() throws InterruptedException
 	
 	{
 		driver.findElement(By.id("email")).clear();
+		Thread.sleep(2000);
 		driver.findElement(By.id("email")).sendKeys("test@test.com");
 		driver.findElement(By.id("pass")).clear();
 		driver.findElement(By.id("pass")).sendKeys("test");
